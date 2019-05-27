@@ -1,0 +1,41 @@
+header {
+    width: 100%;
+    padding: 0 30px;
+    background: #aaa;
+    color: #FFF;
+
+    .container{
+        height: 80px;
+        
+        ul{
+            display: flex;
+            list-style-type: none;
+
+            li{
+            margin-right: 20px;
+            text-transform: uppercase;
+            font-size: 0.8em;
+            color: #FFF;
+            
+                &:last-child{
+                    margin-right: 0;
+                }
+
+                a {
+                    color: #FFFFFF;
+                    transition: all 10s ease-out;
+
+                    &:hover{
+                        background-color: rgba(250, 169, 22, 0.8);
+                        border-bottom: 1px solid #fff;
+                    }
+                }
+            
+            }
+        }
+
+        .mobile-nav-toggle{
+            display: none;
+        }
+    }
+}
