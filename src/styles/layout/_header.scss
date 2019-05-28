@@ -1,12 +1,31 @@
 header {
     width: 100%;
-    padding: 0 30px;
-    background: #aaa;
+    height: 80px;
+    padding: 30px;
+    background: transparent;
     color: #FFF;
+    font-family: $header-font;
+    position: fixed;
+    top: 0;
+    left: 0;
 
     .container{
-        height: 80px;
+        justify-content: space-between;
         
+        .logo{
+
+            h2{
+                text-transform: uppercase;
+                font-size: 24px;
+                font-weight: $light-weight;
+
+                span{
+                    font-weight: $bold-weight;
+                }
+            }
+        }
+
+           
         ul{
             display: flex;
             list-style-type: none;
@@ -16,6 +35,8 @@ header {
             text-transform: uppercase;
             font-size: 0.8em;
             color: #FFF;
+            font-size: 10px;
+            font-weight: $semi-bold-weight;
             
                 &:last-child{
                     margin-right: 0;
@@ -26,7 +47,6 @@ header {
                     transition: all 10s ease-out;
 
                     &:hover{
-                        background-color: rgba(250, 169, 22, 0.8);
                         border-bottom: 1px solid #fff;
                     }
                 }

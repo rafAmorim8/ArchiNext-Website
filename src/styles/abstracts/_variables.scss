@@ -1,0 +1,22 @@
+/* TYPOGRAPHY */
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,600|Raleway:300,400,500,600,700,800&display=swap');
+
+$main-font: 'Raleway', sans-serif;
+$header-font: 'Montserrat', sans-serif;
+
+//Font Weights
+
+$light-weight: 300;
+$regular-weight: 400;
+$medium-weight: 500;
+$semi-bold-weight: 600;
+$bold-weight: 700;
+$extra-bold-weight: 800;
+
+/* COLORS */
+
+$main-bg-color: #F5F5F5;
+$blue: #0169B4;
+$dark-grey: #444444;
+$light-grey: rgb(173, 173, 173);

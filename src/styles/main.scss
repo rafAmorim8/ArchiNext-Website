@@ -1,6 +1,8 @@
-@import 'base/base';
-@import 'abstracts/variables';
 @import 'vendors/normalize';
+@import 'abstracts/variables';
+@import 'base/base';
 
 //Layouts//
 @import 'layout/header';
+@import 'layout/welcome';
+@import 'layout/about';
