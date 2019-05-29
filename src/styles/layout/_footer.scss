@@ -1,0 +1,62 @@
+footer{
+    background: linear-gradient(45deg, rgba(175,63,153,.85) 0%, rgba(25,119,186,.85) 100%), url('../img/welcome-bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+    position: relative;
+
+    .container{
+        height: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+
+        .contact-me{
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+
+            i{
+                width: 70px;
+                height: 70px;
+                padding-top: 25px; 
+                // margin: 0 auto;
+                border: 2px solid white;
+                border-radius: 50%;
+                font-size: 16px;
+                text-align: center;
+                color: white;
+                margin-bottom: 30px;
+            }
+
+            p{
+                color: white;
+                font-size: 10px;
+            }
+        }
+
+        .socials{
+
+            i{
+                margin: 0 25px;
+                font-size: 28px;
+                color: white;
+            }
+        }
+
+        .back-to-top{
+            position: absolute;
+            bottom: 0px;
+            left: auto;
+            right: auto;
+            color: rgb(175,63,153);
+            // background: #FFFFFF;
+            // height: 100px;
+            // width: 100px;
+            // text-align: center;
+            // padding: 30px 0;
+            // border-radius: 50%;
+        }
+        
+    }
+}
