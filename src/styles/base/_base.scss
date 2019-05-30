@@ -19,5 +19,15 @@ a {
     display: flex;
     flex-direction: row;
     // justify-content: space-between;
-    align-items: center;  
+    align-items: center; 
 }
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+// .col-1, col-2{
+//     width: 50%;
+// }

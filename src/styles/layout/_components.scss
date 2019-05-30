@@ -1,0 +1,24 @@
+/*COLUMNS*/
+
+
+
+
+/*BUTTONS*/
+button.readMore{
+    border: 1px solid $light-grey;
+    border-radius: 50px;
+    width: 50%;
+    max-width: 120px;
+    height: 30px;
+    font-size: 0.9em;
+    font-weight: $semi-bold-weight;
+    color: $light-grey;
+    background: #FFFFFF;
+
+    &:hover {
+        background: $blue;
+        color: #FFFFFF;
+        border: none;
+        box-shadow: 0 0 10px rgba(1, 105, 180, .4);
+    }
+}

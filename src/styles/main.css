@@ -371,16 +371,49 @@ a {
           align-items: center;
 }
 
+.flex-center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+/*COLUMNS*/
+/*BUTTONS*/
+button.readMore {
+  border: 1px solid #adadad;
+  border-radius: 50px;
+  width: 50%;
+  max-width: 120px;
+  height: 30px;
+  font-size: 0.9em;
+  font-weight: 600;
+  color: #adadad;
+  background: #FFFFFF;
+}
+
+button.readMore:hover {
+  background: #0169B4;
+  color: #FFFFFF;
+  border: none;
+  -webkit-box-shadow: 0 0 10px rgba(1, 105, 180, 0.4);
+          box-shadow: 0 0 10px rgba(1, 105, 180, 0.4);
+}
+
 header {
   width: 100%;
   height: 80px;
   padding: 30px;
+  margin-top: 40px;
   background: transparent;
   color: #FFF;
   font-family: "Montserrat", sans-serif;
-  position: fixed;
-  top: 0;
-  left: 0;
+  position: absolute;
 }
 
 header .container {
@@ -434,7 +467,7 @@ header .container .mobile-nav-toggle {
 }
 
 .welcome {
-  background: linear-gradient(45deg, rgba(25, 119, 186, 0.85) 0%, rgba(175, 63, 153, 0.85) 100%), url("../img/welcome-bg.jpg");
+  background: linear-gradient(45deg, rgba(25, 119, 186, 0.9) 0%, rgba(175, 63, 153, 0.9) 100%), url("../img/welcome-bg.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   height: 700px;
@@ -453,34 +486,29 @@ header .container .mobile-nav-toggle {
   font-weight: 800;
 }
 
-.about {
+.services {
   background: #F5F5F5;
-  height: 800px;
+  height: 300px;
 }
 
-.about .card-container {
+.services .cards {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-top: -200px;
-  padding: 0 20px;
 }
 
-.about .card-container .card {
+.services .cards .card {
   background: #FFFFFF;
-  width: auto;
+  max-width: 25%;
+  min-width: 250px;
   height: 450px;
   text-align: center;
-  margin-right: 30px;
+  margin-right: 20px;
   padding: 50px 10px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -500,41 +528,74 @@ header .container .mobile-nav-toggle {
   transition: transform 0.4s ease, box-shadow 0.4s ease, -webkit-transform 0.4s ease, -webkit-box-shadow 0.4s ease;
 }
 
-.about .card-container .card:hover {
+.services .cards .card:hover {
   box-shadow: 0px 1px 9px 2px rgba(0, 0, 0, 0.12);
   -webkit-box-shadow: 0px 1px 9px 2px rgba(0, 0, 0, 0.12);
 }
 
-.about .card-container .card i.fas, .about .card-container .card i.far {
-  font-size: 5vw;
+.services .cards .card:last-child {
+  margin-right: 0;
+}
+
+.services .cards .card i.fas, .services .cards .card i.far {
+  font-size: 4em;
   color: transparent;
   -webkit-text-stroke: 3px #0169B4;
   -webkit-text-fill-color: transparent;
 }
 
-.about .card-container .card h2 {
-  font-size: 2vw;
+.services .cards .card h2 {
+  font-size: 1.5em;
   font-weight: 700;
   color: #444444;
 }
 
-.about .card-container .card p {
-  font-size: 1.2vw;
+.services .cards .card p {
+  font-size: 0.9em;
   font-weight: 500;
   color: #adadad;
 }
 
-.about .card-container .card button {
-  border: 1px solid #adadad;
-  border-radius: 50px;
-  width: 50%;
-  height: 30px;
-  color: #adadad;
-  background: #FFFFFF;
+.about {
+  background: #F5F5F5;
+  width: 100%;
+  height: 300px;
+}
+
+.about .container {
+  height: 100%;
+  padding: 30px 0;
+}
+
+.about .container .col-1 {
+  max-width: 50%;
+  height: 100%;
+  padding: 10px;
+  font-size: 0.9em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.about .container .col-2 {
+  max-width: 50%;
+  height: 100%;
+  padding: 10px;
+}
+
+.about .container .col-2 img {
+  height: 100%;
+  width: 100%;
 }
 
 footer {
-  background: linear-gradient(45deg, rgba(175, 63, 153, 0.85) 0%, rgba(25, 119, 186, 0.85) 100%), url("../img/welcome-bg.jpg");
+  background: linear-gradient(45deg, rgba(175, 63, 153, 0.9) 0%, rgba(25, 119, 186, 0.9) 100%), url("../img/welcome-bg.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   height: 400px;
