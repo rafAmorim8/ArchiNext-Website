@@ -1,3 +1,4 @@
+//General Styles//
 * {
     margin: 0;
     padding: 0;
@@ -13,12 +14,12 @@ a {
     text-decoration: none;
 }
 
+//Container that centers the content within 70% of body width//
 .container {
     width: 70%;
     margin: 0 auto;
     display: flex;
     flex-direction: row;
-    // justify-content: space-between;
     align-items: center; 
 }
 
@@ -28,6 +29,12 @@ a {
     align-items: center;
 }
 
-// .col-1, col-2{
-//     width: 50%;
-// }
+
+//TYPOGRAPHY//
+.titles {
+    font-family: $main-font;
+    letter-spacing: 2px;
+    color: $blue;
+    font-size: 40px;
+    font-weight: $medium-weight;
+}

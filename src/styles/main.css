@@ -387,6 +387,14 @@ a {
           align-items: center;
 }
 
+.titles {
+  font-family: "Raleway", sans-serif;
+  letter-spacing: 2px;
+  color: #0169B4;
+  font-size: 40px;
+  font-weight: 500;
+}
+
 /*COLUMNS*/
 /*BUTTONS*/
 button.readMore {
@@ -394,7 +402,7 @@ button.readMore {
   border-radius: 50px;
   width: 50%;
   max-width: 120px;
-  height: 30px;
+  height: 40px;
   font-size: 0.9em;
   font-weight: 600;
   color: #adadad;
@@ -428,7 +436,7 @@ header .container {
 
 header .container .logo h2 {
   text-transform: uppercase;
-  font-size: 24px;
+  font-size: 34px;
   font-weight: 300;
 }
 
@@ -444,12 +452,11 @@ header .container ul {
 }
 
 header .container ul li {
-  margin-right: 20px;
+  margin-right: 40px;
   text-transform: uppercase;
-  font-size: 0.8em;
+  font-size: 16px;
   color: #FFF;
-  font-size: 10px;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 header .container ul li:last-child {
@@ -564,7 +571,7 @@ header .container .mobile-nav-toggle {
   background: #F5F5F5;
   width: 100%;
   height: 450px;
-  margin: 50px;
+  margin: 50px 0;
 }
 
 .about .container {
@@ -592,15 +599,6 @@ header .container .mobile-nav-toggle {
           flex-direction: column;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  padding: 25px;
-}
-
-.about .container .col-1 h1 {
-  font-family: "Raleway", sans-serif;
-  letter-spacing: 3px;
-  color: #0169B4;
-  font-size: 40px;
-  font-weight: 500;
 }
 
 .about .container .col-1 p {
@@ -625,8 +623,90 @@ header .container .mobile-nav-toggle {
 .projects {
   background: #F5F5F5;
   width: 100%;
-  height: 450px;
+  max-height: 550px;
   margin-bottom: 50px;
+}
+
+.projects .projectLibrary {
+  margin: 50px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 100%;
+}
+
+.projects .projectLibrary div {
+  width: 25%;
+}
+
+.projects .projectLibrary div img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  overflow: hidden;
+}
+
+.solutions {
+  height: 500px;
+}
+
+.solutions .container {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.solutions .container .solutionsLibrary {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  height: 300px;
+}
+
+.solutions .container .solutionsLibrary div {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 10px 50px 10px 0;
+}
+
+.solutions .container .solutionsLibrary div h2 {
+  color: #444444;
+  font-weight: 500;
+}
+
+.solutions .container .solutionsLibrary div p {
+  color: #adadad;
+  line-height: 2;
+  font-weight: 500;
 }
 
 footer {
